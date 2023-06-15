@@ -122,7 +122,7 @@
 
   <div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" >
       <div
-        class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto mt-32 pb-6 lg:my-0"
+        class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto mt-32 lg:my-0"
       >
         <div class="w-full mr-2 lg:w-1/5 hidden lg:block">
           <div class="">
@@ -175,7 +175,7 @@
         <!--Main Col-->
         <div
           id="profile"
-          class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-lg shadow-2xl bg-white opacity-90 mx-6 lg:opacity-75 lg:mx-0"
+          class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-lg shadow-2xl bg-white opacity-90 mx-6 lg:opacity-75 lg:mx-0 "
         >
           <div class="p-4 md:p-12 text-center lg:text-left">
             <!-- Image for mobile view-->
@@ -234,7 +234,7 @@
               </a>
             </div>
 
-            <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between lg:hidden">
+            <div class="mt-6 pb-16  lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between lg:hidden">
               <!-- <a class="link" href="#" data-tippy-content="@facebook_handle">
                   <svg class="h-6 fill-current text-gray-600 hover:text-green-700 hover:scale-105" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <title>Facebook</title>
@@ -517,17 +517,17 @@
 </div>
 
 <!--this one will be used for project display--> 
-<div id="projects" class=" h-screen pt-8 hidden lg:block">
+<div id="projects" class="px-5 h-full pt-8 hidden lg:block">
   <div class="text-center">
-    <h1 class="text-white text-3xl underline font-medium ml-12 ">Projects</h1>
+    <h1 class="text-white text-3xl underline font-medium ml-8 ">Projects</h1>
   </div>
-  <div class="h-screen  bg-gray-800 m-6 border-neutral-500 border-2 rounded-2xl overflow-hidden" >
+  <div class="h-full bg-gray-800 m-2 border-neutral-500 border-2 rounded-2xl overflow-hidden" >
 
-    <div class="w-full h-1/3 flex m-2 flex-inline ">
+    <div class="w-full flex m-2 flex-inline ">
       <!--modifying width of image here
       remove when using with project emergence
       current changes are only for portfolio-->
-      <img class="w-2/7  rounded-2xl mr-8" src="https://raw.githubusercontent.com/alexdeathway/Gecom/master/docs/assets/gecom_screenshot_1.png"> 
+      <img class="w-1/3  rounded-2xl mr-8" src="https://raw.githubusercontent.com/alexdeathway/Gecom/master/docs/assets/gecom_screenshot_1.png"> 
       <div class="w-2/4" >
         <p class="font-bold text-white">Project: P-2:21 Gecom</p>
         <span class="h-1 w-4 text-yellow-500"></span>
@@ -559,14 +559,22 @@
       </div>    
     </div>  
 
-    <div class="w-full h-1/3 flex m-2 flex-inline">
-      <img class="w-2/7 rounded-2xl mr-8" src="https://raw.githubusercontent.com/alexdeathway/torswitch/master/assets/logo/ProjectPlainLogo.jpg"> 
+    <div class="w-full flex m-2 flex-inline ">
+      <img class="w-1/3 w-3/5 rounded-2xl mr-8" src="https://raw.githubusercontent.com/alexdeathway/torswitch/master/assets/logo/ProjectPlainLogo.jpg"> 
       <div class="w-2/4" >
         <p class="font-bold text-white">Project: Tor Switch</p>
         <span class="h-1 w-4 text-yellow-500"></span>
         <p class="text-sm text-white opacity-60 my-2 ">
           A python package which allow user to easily setup tor porxy without manual configurations.Users can switch between tor and normal connection,change ip on demand, automate or rate limit tor ip rotation without much hassle.
-        <p>  
+        <p>
+        <ul class="list-disc pl-5 py-1 md-2 text-sm text-white opacity-60">
+            
+            <li>Version: 0.1.9</li>
+            <li>pypi: 2.0.1</li>
+            <li>license: MIT</li>
+            
+            <!-- <li>Item 4</li> -->
+        </ul>    
         <div class="flex flex-inline gap-2 ">
           <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-yellow-300 rounded-full">python</span>
           <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-fuchsia-800 rounded-full">tor</span> 
@@ -589,8 +597,8 @@
       </div>  
     </div>   
 
-    <div class="w-full h-1/3 flex m-2 flex-inline">
-      <img class="w-2/7   rounded-2xl mr-8 " src="https://raw.githubusercontent.com/alexdeathway/k9archiver/master/docs/screenshot/K9archiver_homepage.png"> 
+    <div class="w-full flex m-2 flex-inline">
+      <img class="w-1/3   rounded-2xl mr-8 " src="https://raw.githubusercontent.com/alexdeathway/k9archiver/master/docs/screenshot/K9archiver_homepage.png"> 
       <div class="w-2/4" >
         <p class="font-bold text-white">Project:k9archiver</p>
         <span class="h-1 w-4 text-yellow-500"></span>
@@ -631,6 +639,7 @@
 
   </div>
 </div> -->
+
 
 <!--[mobile or small screen] display-->
 <section id="mobile-projects" class="block lg:hidden">
